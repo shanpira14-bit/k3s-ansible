@@ -4,7 +4,7 @@ ansible_user: shanpira14
 systemd_dir: /etc/systemd/system
 
 # interface which will be used for flannel
-flannel_iface: "ens18"
+flannel_iface: "eth0"
 
 # apiserver_endpoint is virtual ip-address which will be configured on each master
 apiserver_endpoint: "192.168.0.253"
