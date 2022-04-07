@@ -1,6 +1,6 @@
 ---
 k3s_version: v1.23.4+k3s1
-ansible_user: ansibleuser
+ansible_user: shanpira14
 systemd_dir: /etc/systemd/system
 
 # interface which will be used for flannel
@@ -14,7 +14,7 @@ apiserver_endpoint: "192.168.0.253"
 k3s_token: "SUPER DUPER SECRET TOKEN"
 
 # change these to your liking, the only required one is--no-deploy servicelb
-extra_server_args: "--no-deploy servicelb --no-deploy traefik"
+extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644"
 extra_agent_args: ""
 
 # image tag for kube-vip
@@ -25,4 +25,4 @@ metal_lb_speaker_tag_version: "v0.12.1"
 metal_lb_controller_tag_version: "v0.12.1"
 
 # metallb ip range for load balancer
-metal_lb_ip_range: "192.168.0.13-192.168.0.15"
+metal_lb_ip_range: "192.168.0.151-192.168.0.160"
